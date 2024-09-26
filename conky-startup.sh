@@ -1,2 +1,4 @@
-#killall conky>/dev/null
-sleep 10s && conky -c "$HOME/.conky/Panos.conkyrc" &
+#!/bin/bash
+
+killall conky > /dev/null
+conky --config="$HOME/.conky/Panos.conkyrc" --pause=30 &
